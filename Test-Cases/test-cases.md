@@ -1,4 +1,5 @@
 # ⚙️ Casos de teste
+## Modulo de Checkout: 
 ---
 Id: CT-01 <br>
 Título: Preencher os dados do comprador com sucesso <br>
@@ -19,7 +20,37 @@ Passos:
   3. Manter o campo "Last Name" vázio e preencher os outros campos obrigatórios"
   4. Clicar no botão "Continue" e Validar mensagem de erro exibida
   5. Manter o campo "Postal Code", vázio e preencher os outros campos obrigatórios.
-  6. Clicar no botão Continue e validar mensagem de erro exibida
+  6. Clicar no botão Continue e validar mensagem de erro exibida <br>
 Resultado esperado: O sistema deve interromper o fluxo de checkout e exibir a mensagem requerindo o preenchimento obrigatorio de cada campo especifico. 
 
-Id: CT-03
+Id: CT-03 <br>
+Título: Finalizar compra com sucesso <br>
+Pré-condições: Possuir um produto já adicionado no carrinho, ter preenchido os dados do comprador e estar na tela "Checkout: Overview" <br>
+Passos: 
+  1. Verificar os detalhes do produto exibido na tela de resumo do pedido
+  2. Clicar no botão "Finish" <br>
+Resultado esperado: O sistema deve redirecionar para a página "Checkout: Complete!" Deve ser exibida a mensagem confirmando que a compra foi concluída com sucesso
+
+Id: CT-04 <br>
+Título: Finalizar compra sem adicionar item no carrinho <br>
+Pré-condições: Não possuir nenhum produto adicionado no carrinho e estar na tela "Your cart" <br>
+Passos: 
+1. Acessar a página "Your Cart"
+2. Verificar se o carrinho está vazio
+3. Clicar no botão "Checkout" <br>
+Resultado esperado: O sistema deve impedir o avanço no fluxo de checkout quando o carrinho estiver vazio, exibindo uma mensagem informando que é necessário adicionar produtos antes de prosseguir.
+
+
+Id: CT-05 <br>
+Título: Cancelamento de checkout <br>
+Pré-condições: Possuir um produto já adicionado no carrinho, ter preenchido os dados do comprador e estar na tela "Checkout: Overview" <br>
+Passos: 
+1. Clicar no botão "Cancel"
+2. Aguardar redirecionamento da página
+3. Acessar a página "Your Cart" <br>
+Resultado esperado: O sistema deve redirecionar para a página "Products" e o item adicionado anteriormente, deve permanecer no carrinho. 
+
+---
+
+
+
