@@ -150,3 +150,110 @@ Estar na página "Products"
 
 **Resultado esperado:**  
 O ícone do carrinho deve indicar a quantidade de itens adicionados e o carrinho deve conter todos os dados dos produtos válidos.  
+
+---
+
+## Módulo de login 🔐  
+---
+
+### Id: CT-10  
+**Título:** Realizar login com sucesso  
+
+**Pré-condições:**  
+Estar na página de login do Swag Labs e utilizar o nome de usuário "standard_user"  
+
+**Passos:**  
+1. Preencher o campo "Username" com o usuário pré-definido  
+2. Preencher o campo "Password" com a senha válida exibida na seção "Password for all users"  
+3. Clicar no botão "Login"  
+
+**Resultado esperado:**  
+O usuário deve conseguir logar com sucesso e ser direcionado para a tela "Products"  
+
+---
+
+### Id: CT-11  
+**Título:** Tentar realizar login sem preencher o campo "Username"  
+
+**Pré-condições:**  
+Estar na página de login do Swag Labs  
+
+**Passos:**  
+1. Manter o campo "Username" vazio  
+2. Preencher o campo "Password" com a senha válida exibida na seção "Password for all users"  
+3. Clicar no botão "Login"  
+
+**Resultado esperado:**  
+O sistema deve impedir o login e a mensagem "Epic sadface: Username is required" deve ser exibida para o usuário  
+
+---
+
+### Id: CT-12  
+**Título:** Tentar realizar login sem preencher o campo "Password"  
+
+**Pré-condições:**  
+Estar na página de login do Swag Labs e utilizar o nome de usuário "standard_user"  
+
+**Passos:**  
+1. Preencher o campo "Username" com o usuário pré-definido  
+2. Manter o campo "Password" vazio  
+3. Clicar no botão "Login"  
+
+**Resultado esperado:**  
+O sistema deve impedir o login e a mensagem "Epic sadface: Password is required" deve ser exibida para o usuário  
+
+---
+
+### Id: CT-13  
+**Título:** Tentar realizar login com usuário inválido  
+
+**Pré-condições:**  
+Estar na página de login do Swag Labs  
+
+**Passos:**  
+1. Preencher o campo "Username" com um usuário que não esteja na lista "Accepted usernames are:" exibida na tela de login  
+2. Preencher o campo "Password" com a senha válida exibida na seção "Password for all users"  
+3. Clicar no botão "Login"  
+
+**Resultado esperado:**  
+O sistema deve impedir o login e a mensagem "Epic sadface: Username and password do not match any user in this service" deve ser exibida para o usuário  
+
+---
+
+### Id: CT-14  
+**Título:** Tentar realizar login com senha inválida  
+
+**Pré-condições:**  
+Estar na página de login do Swag Labs e utilizar o nome de usuário "standard_user"  
+
+**Passos:**  
+1. Preencher o campo "Username" com o usuário pré-definido  
+2. Preencher o campo "Password" com uma senha diferente da exibida na seção "Password for all users"  
+3. Clicar no botão "Login"  
+
+**Resultado esperado:**  
+O sistema deve impedir o login e a mensagem "Epic sadface: Username and password do not match any user in this service" deve ser exibida para o usuário  
+
+---
+
+## Módulo do catálogo 🛍️  
+---
+
+### Id: CT-14  
+**Título:** Tentar realizar login com senha inválida  
+
+**Pré-condições:**  
+Estar na página de login do Swag Labs e utilizar o nome de usuário "standard_user"  
+
+**Passos:**  
+1. Preencher o campo "Username" com o usuário pré-definido  
+2. Preencher o campo "Password" com uma senha diferente da exibida na seção "Password for all users"  
+3. Clicar no botão "Login"  
+
+**Resultado esperado:**  
+O sistema deve impedir o login e a mensagem "Epic sadface: Username and password do not match any user in this service" deve ser exibida para o usuário  
+
+
+
+
+
