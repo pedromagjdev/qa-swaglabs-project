@@ -21,7 +21,9 @@ Foram testados os seguintes módulos:
 - Login  
 - Catálogo  
 - Carrinho  
-- Checkout  
+- Checkout
+
+A priorização dos testes foi definida com base no impacto na regra de negócio e na jornada de compra do usuário.
 
 ---
 
@@ -42,14 +44,12 @@ O sistema permite que o usuário avance por todo o fluxo de checkout e finalize 
 
 ## 🎥 Evidências
 
-### 📸 Checkout Overview
-![Checkout Overview](./Evidences/evidence1.png)
+![Checkout Overview](Bug-Report/Evidences/evidence1.png)
 
-### 📸 Checkout Complete
-![Checkout Complete](./Evidences/evidence2.png)
+![Checkout Complete](Bug-Report/Evidences/evidence2.png)
 
 ### 🎥 Reprodução do bug
-![Bug acontecendo](./Evidences/evidence-gif.gif)
+![Bug acontecendo](Bug-Report/Evidences/evidence-gif.gif)
 
 ---
 
