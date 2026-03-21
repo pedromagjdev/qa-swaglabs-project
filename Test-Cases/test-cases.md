@@ -239,19 +239,84 @@ O sistema deve impedir o login e a mensagem "Epic sadface: Username and password
 ## Módulo do catálogo 🛍️  
 ---
 
-### Id: CT-14  
-**Título:** Tentar realizar login com senha inválida  
+## Módulo do catálogo 🛍️  
+---
+
+### Id: CT-15  
+**Título:** Validar o filtro de produtos por nome de A a Z (ordem alfabética)  
 
 **Pré-condições:**  
-Estar na página de login do Swag Labs e utilizar o nome de usuário "standard_user"  
+Estar na tela de catálogo de produtos - "Products"  
 
 **Passos:**  
-1. Preencher o campo "Username" com o usuário pré-definido  
-2. Preencher o campo "Password" com uma senha diferente da exibida na seção "Password for all users"  
-3. Clicar no botão "Login"  
+1. Clicar na lista suspensa abaixo do menu de navegação (ícone de filtro)  
+2. Escolher a opção "Name (A to Z)"  
 
 **Resultado esperado:**  
-O sistema deve impedir o login e a mensagem "Epic sadface: Username and password do not match any user in this service" deve ser exibida para o usuário  
+O catálogo deve exibir os produtos organizados por nome em ordem alfabética crescente (A-Z)  
+
+---
+
+### Id: CT-16  
+**Título:** Validar o filtro de produtos por nome de Z a A (ordem alfabética decrescente)  
+
+**Pré-condições:**  
+Estar na tela de catálogo de produtos - "Products"  
+
+**Passos:**  
+1. Clicar na lista suspensa abaixo do menu de navegação (ícone de filtro)  
+2. Escolher a opção "Name (Z to A)"  
+
+**Resultado esperado:**  
+O catálogo deve exibir os produtos organizados por nome em ordem alfabética decrescente (Z-A)  
+
+---
+
+### Id: CT-17  
+**Título:** Validar o filtro de produtos ordenados por preço (ordem crescente)  
+
+**Pré-condições:**  
+Estar na tela de catálogo de produtos - "Products"  
+
+**Passos:**  
+1. Clicar na lista suspensa abaixo do menu de navegação (ícone de filtro)  
+2. Escolher a opção "Price (low to high)"  
+
+**Resultado esperado:**  
+O catálogo deve exibir os produtos organizados por preço em ordem crescente  
+
+---
+
+### Id: CT-18  
+**Título:** Validar o filtro de produtos ordenados por preço (ordem decrescente)  
+
+**Pré-condições:**  
+Estar na tela de catálogo de produtos - "Products"  
+
+**Passos:**  
+1. Clicar na lista suspensa abaixo do menu de navegação (ícone de filtro)  
+2. Escolher a opção "Price (high to low)"  
+
+**Resultado esperado:**  
+O catálogo deve exibir os produtos organizados por preço em ordem decrescente  
+
+---
+
+### Id: CT-19  
+**Título:** Validar a tela de produto expandido  
+
+**Pré-condições:**  
+Estar na tela de catálogo de produtos - "Products"  
+
+**Passos:**  
+1. Escolher um produto do catálogo  
+2. Clicar no produto escolhido  
+3. Clicar na opção "Back to products", localizada na parte esquerda da tela, abaixo do menu de navegação  
+
+**Resultado esperado:**  
+O produto deve ser exibido de forma expandida, contendo todos os dados válidos e idênticos aos exibidos na tela de catálogo, em uma nova tela na mesma aba do navegador.  
+A opção "Back to products" deve estar visível e clicável, e ao clicar, o usuário deve ser direcionado novamente para a tela "Products"  
+
 
 
 
