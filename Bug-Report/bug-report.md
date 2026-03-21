@@ -46,5 +46,12 @@ O sistema permite prosseguir com o checkout sem nenhum item no carrinho, além d
 ---
 
 **Evidência:**  
-[Print, vídeo ou descrição detalhada do erro]  
+
+![Tela de Checkout Overview](./Evidences/evidence1.png)
+
+![Tela de Checkout finalizado](./Evidences/evidence2.png)
+
+![Video de demonstração do bug](./Evidences/bug-report-evidence.mp4)
+
+
 
