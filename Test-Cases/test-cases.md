@@ -239,9 +239,6 @@ O sistema deve impedir o login e a mensagem "Epic sadface: Username and password
 ## Módulo do catálogo 🛍️  
 ---
 
-## Módulo do catálogo 🛍️  
----
-
 ### Id: CT-15  
 **Título:** Validar o filtro de produtos por nome de A a Z (ordem alfabética)  
 
