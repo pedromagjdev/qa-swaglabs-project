@@ -44,16 +44,16 @@ O sistema permite prosseguir com o checkout sem nenhum item no carrinho, além d
 
 ---
 
-## Evidence:
+## Evidências:
 
-### 📸 Screenshot - Checkout Overview
-![Checkout Overview](./evidencias/checkout-overview.png)
+### 📸 Captura de tela - Checkout Overview
+![Checkout Overview](./Evidences/evidence1.png)
 
-### 📸 Screenshot - Checkout Complete
-![Checkout Complete](./evidencias/checkout-complete.png)
+### 📸 Captura de tela - Checkout Complete
+![Checkout Complete](./Evidences/evidence2.png)
 
-### 🎥 Video
-[Watch bug reproduction](link-do-seu-video)
+### 🎥 Gif - Reprodução do bug
+![Bug acontecendo](./Evidences/evidence-gif.gif)
 
 ---
 
