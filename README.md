@@ -1,44 +1,60 @@
 # 🧪 Testes Manuais - Swag Labs
 
-## 📌 Sobre
-Projeto feito para praticar testes manuais em uma aplicação web, focando nos principais fluxos de compra.
+## 📌 Sobre o projeto
 
-Todos os testes foram realizados utilizando o usuário **standard_user**.
+Este projeto foi desenvolvido com o objetivo de praticar testes manuais em uma aplicação web de e-commerce, simulando o comportamento real de um QA em um fluxo crítico de negócio.
 
----
-
-## ⚙️ Ambiente
-- Sistema: Swag Labs  
-- URL: https://www.saucedemo.com/  
-- Navegador: Zen Browser 1.19.3b  
-- Sistema Operacional: Windows 10 Home  
+Os testes foram realizados no sistema Swag Labs, com foco na jornada de compra do usuário.
 
 ---
 
-## 🎯 Escopo
-Foram testados os seguintes módulos:
+## 🎯 Escopo dos testes
 
-- Login  
-- Catálogo  
-- Carrinho  
-- Checkout
+Foram testados os principais módulos da aplicação:
 
-A priorização dos testes foi definida com base no impacto na regra de negócio e na jornada de compra do usuário.
+* Login
+* Catálogo de produtos
+* Carrinho
+* Checkout
 
----
-
-## ⚙️ Casos de teste
-Foram criados **19 casos de teste** cobrindo cenários de sucesso, validações e fluxos de erro.
+A priorização dos testes foi baseada no impacto direto na experiência do usuário e no fluxo de conversão de compra.
 
 ---
 
-## 🐞 Bug encontrado
+## ⚙️ Ambiente de testes
 
-**ID:** BUG-01  
-**Título:** Sistema permite finalizar checkout sem itens no carrinho  
+* Sistema: Swag Labs
+* URL: https://www.saucedemo.com/
+* Navegador: Zen Browser 1.19.3b
+* Sistema Operacional: Windows 10 Home
+* Usuário de teste: **standard_user**
 
-**Resumo:**  
-O sistema permite que o usuário avance por todo o fluxo de checkout e finalize a compra mesmo com o carrinho vazio.
+---
+
+## 🧪 Estratégia de testes
+
+Foram elaborados **19 casos de teste**, cobrindo:
+
+* Cenários positivos (fluxos esperados)
+* Validações de regras de negócio
+* Cenários negativos (erros e comportamentos inesperados)
+
+Os testes foram estruturados com base na lógica da aplicação e nos possíveis pontos de falha durante a jornada do usuário.
+
+---
+
+## 🐞 Bug identificado
+
+**ID:** BUG-01
+**Título:** Sistema permite finalizar checkout sem itens no carrinho
+
+### 📌 Descrição
+
+Foi identificado que o sistema permite que o usuário avance por todas as etapas do checkout e finalize a compra mesmo sem possuir itens no carrinho.
+
+### ⚠️ Impacto
+
+Esse comportamento compromete diretamente a regra de negócio, permitindo a conclusão de uma compra inválida.
 
 ---
 
@@ -49,9 +65,13 @@ O sistema permite que o usuário avance por todo o fluxo de checkout e finalize 
 ![Checkout Complete](Bug-Report/Evidences/evidence2.png)
 
 ### 🎥 Reprodução do bug
+
 ![Bug acontecendo](Bug-Report/Evidences/evidence-gif.gif)
 
 ---
 
 ## 🧠 Conclusão
-O projeto ajudou a praticar testes manuais, criação de cenários e identificação de falhas no sistema, principalmente em fluxos críticos como o checkout.
+
+Este projeto demonstra a aplicação de testes manuais com foco em cenários críticos de negócio, identificação de falhas relevantes e validação do comportamento do sistema.
+
+O bug encontrado evidencia a importância da validação de regras de negócio em fluxos essenciais como o checkout.
