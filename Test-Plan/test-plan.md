@@ -2,7 +2,7 @@
 
 ## 1. Objetivo
 
-Garantir a qualidade das principais funcionalidades da aplicação **Swag Labs**, com foco no fluxo de compra (checkout), assegurando que o usuário consiga realizar a jornada completa de compra sem falhas críticas que impactem a receita do negócio.
+Garantir a qualidade das principais funcionalidades da aplicação **Swag Labs**, com foco no fluxo de compra (checkout), validando que o usuário consiga realizar a jornada completa sem falhas críticas que impactem a experiência ou a conversão.
 
 ---
 
@@ -12,95 +12,89 @@ Garantir a qualidade das principais funcionalidades da aplicação **Swag Labs**
 
 Serão realizados testes manuais funcionais nos seguintes módulos:
 
-- Login
-- Catálogo de Produtos
-- Carrinho
-- Checkout
+* Login
+* Catálogo de Produtos
+* Carrinho
+* Checkout
 
-Também serão executados testes de regressão básicos após correções de defeitos identificados.
+Também serão executados testes de regressão básicos após identificação de defeitos.
 
 ---
 
 ### 2.2 Fora do Escopo
 
-Não fazem parte deste ciclo de testes:
+Não fazem parte deste ciclo:
 
-- Testes de Segurança
-- Testes de Performance
-- Testes de Usabilidade
-- Testes de Acessibilidade
-- Testes de Responsividade
-- Testes automatizados
+* Testes de Performance
+* Testes de Segurança
+* Testes de Acessibilidade
+* Testes de Responsividade
+* Testes automatizados
 
 ---
 
-## 3. Itens a Serem Testados (Ordem de Prioridade)
+## 3. Prioridade dos Testes
 
 1. Checkout
 2. Carrinho
 3. Login
 4. Catálogo de Produtos
 
-A priorização foi definida com base no impacto direto na receita e na jornada de compra do usuário.
+A priorização foi definida com base no impacto direto na jornada de compra e no negócio.
 
 ---
 
 ## 4. Estratégia de Teste
 
-Serão realizados testes manuais funcionais e testes de regressão utilizando as seguintes técnicas de teste:
+Os testes serão realizados manualmente na interface da aplicação, com foco em:
 
-- Particionamento de Equivalência
-- Análise de Valor Limite
-- Tabela de Decisão
-- Transição de Estados
-- Testes Exploratórios
+* Validação dos fluxos principais (happy path)
+* Identificação de comportamentos inesperados
+* Testes negativos (ações inválidas ou fora do fluxo esperado)
+* Testes exploratórios para descoberta de falhas
 
-Os testes serão executados diretamente na interface da aplicação (Front-end).
+Os cenários foram definidos com base na experiência do usuário e nas regras de negócio da aplicação.
 
 ---
 
 ## 5. Critérios de Entrada
 
-Os testes poderão ser iniciados quando:
+Os testes iniciam quando:
 
-- A aplicação estiver disponível para acesso.
-- O ambiente estiver estável.
-- As funcionalidades principais estiverem implementadas.
-- Os requisitos mínimos estiverem definidos.
+* A aplicação estiver disponível
+* O ambiente estiver estável
+* As funcionalidades principais estiverem acessíveis
 
 ---
 
 ## 6. Critérios de Saída
 
-Os testes serão considerados finalizados quando:
+Os testes são finalizados quando:
 
-- Todos os casos de teste planejados forem executados.
-- Não houver defeitos críticos ou bloqueadores em aberto.
-- Os resultados forem devidamente documentados.
-- Os defeitos identificados estiverem registrados.
-
----
-
-## 7. Riscos Identificados
-
-- Falhas críticas no fluxo de checkout podem gerar prejuízo financeiro direto.
-- Erros no carrinho podem impedir a finalização da compra.
-- Problemas de autenticação podem bloquear o acesso de usuários.
-- Instabilidade do sistema pode comprometer a experiência do cliente.
-- Riscos de segurança e indisponibilidade do sistema (fora do escopo deste ciclo).
+* Todos os cenários planejados forem executados
+* Não houver defeitos críticos abertos
+* Os resultados estiverem documentados
 
 ---
 
-## 8. Ferramentas Utilizadas
+## 7. Riscos
 
-- Navegador Web (Chrome)
-- GitHub para versionamento
-- Documentação em Markdown
+* Falhas no checkout podem impactar diretamente a conversão
+* Problemas no carrinho podem impedir a finalização da compra
+* Erros no login podem bloquear o acesso do usuário
 
 ---
 
-## 9. Tipo de Teste
+## 8. Ferramentas
 
-- Teste Funcional Manual
-- Teste de Regressão
-- Teste Exploratório
+* Navegador Web
+* GitHub
+* Documentação em Markdown
+
+---
+
+## 9. Tipos de Teste
+
+* Teste Funcional Manual
+* Teste de Regressão
+* Teste Exploratório
